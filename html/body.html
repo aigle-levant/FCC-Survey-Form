@@ -1,0 +1,102 @@
+<body>
+<!--Here shall be the content-->
+    <div class="container">
+        <header class="header">
+        <h1 id="title">Gamers' Survey</h1>
+        <p id="description">Thank you for taking your time to fill this survey</p>
+        </header>
+
+
+        <form id="survey-form">
+            <div class="form-elements">
+                <!--Insert label for name-->
+                <label id="name-label" for="name">Name
+                    <input id="name" type="text" name="name" class="form-content" placeholder="Enter your name here" required>
+                </label>
+            </div>
+
+            <!--Insert label for sex. There will be 4 radio buttons for the genders-->
+            <div class="form-elements">
+                <label id="sex-label">
+                <input name="sex" type="radio" value="male" class="form-radio" required>
+                Male </label>
+                <label id="sex-label">
+                    <input name="sex" type="radio" value="female" class="form-radio" required>
+                    Female </label>
+                <label id="sex-label">
+                    <input name="sex" type="radio" value="rather-not-say" class="form-radio" required>
+                    Rather not say </label>
+                <label id="sex-label">
+                    <input name="sex" type="radio" value="others" class="form-radio" required>
+                        Others </label>
+            </div>
+
+            <div class="form-elements">
+                <!--Insert a dropdown for age!-->
+                <label id="number-label" for="age">Age
+                    <input type="number" name="age" id="number" class="age-box" min="3" max="100" placeholder="Age?">
+            </div>
+
+            <div class="form-elements">
+                <!--Insert label for email-->
+                <label id="email-label" for="email">Email
+                    <input id="email" type="email" name="email" class="form-content" placeholder="Enter your email id" required>
+                </label>
+            </div>
+           
+            <div class="form-elements">
+                <p>Which game are you playing?</p>
+                <select id="dropdown" name="game" class="game-select" required>
+                    <option disabled selected value>Select game</option>
+                    <option value="minecraft">Minecraft</option>
+                    <option value="cod">Call of Duty</option>
+                    <option value="genshin-impact">Genshin Impact</option>
+                    <option value="ac">Assassin's Creed</option>
+                    <option value="far-cry">Far Cry</option>
+                    <option value="hitman">Hitman</option>
+                    <option value="mortal-kombat">Mortal Kombat</option>
+                    <option value="pubg">PUBG</option>
+                    <option value="pokemon">Pokemon</option>
+                    <option value="skyrim">Skyrim</option>
+                    <option value="witcher">The Witcher</option>
+                    <option value="wow">World of Warcraft</option>
+                    <option value="lol">League of Legends</option>
+                    <option value="other">Other game</option>
+                </select>
+                <label id="other-game-label" for="other-game"><p>If you chose other game, please specify below
+                    <span class="optional">(optional)</span>
+                </p>
+                    <input id="others" type="text" name="other-game" class="form-content" placeholder="Enter name of game">
+                </label>
+            </div>
+            <div class="form-elements">
+                <p>Select your favourite game genre / genres
+                <span class="additional">(You can select more than one option)</span></p>
+                <label><input type="checkbox" name="genre" value="fantasy" class="form-checkbox">Fantasy</label>
+                <label><input type="checkbox" name="genre" value="kids" class="form-checkbox">Kids</label>
+                <label><input type="checkbox" name="genre" value="adventure" class="form-checkbox">Adventure</label>
+                <label><input type="checkbox" name="genre" value="rpg" class="form-checkbox">Role-playing games</label>
+                <label><input type="checkbox" name="genre" value="action"  class="form-checkbox">Action</label>
+                <label><input type="checkbox" name="genre" value="simulation" class="form-checkbox">Simulation</label>
+                <br><label><input type="checkbox" name="genre" value="horror" class="form-checkbox">Horror</label>
+                <label><input type="checkbox" name="genre" value="indie" class="form-checkbox">Indie</label>
+                <label><input type="checkbox" name="genre" value="casual" class="form-checkbox">Casual</label>
+                <label><input type="checkbox" name="genre" value="mmo" class="form-checkbox">MMO</label>
+                <label><input type="checkbox" name="genre" value="strategy" class="form-checkbox">Strategy</label>
+                <label><input type="checkbox" name="genre" value="sports" class="form-checkbox">Sports</label>
+            </div>
+            <div class="form-element">
+                <p>Any other comments?
+                    <span class="optional">(optional)</span>
+                </p>
+                <textarea class="form-content" name="comments" placeholder="Enter your comments here">
+                </textarea>
+            </div>
+            <div class="form-element">
+                <button type="submit" name="submit" id="submit">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
