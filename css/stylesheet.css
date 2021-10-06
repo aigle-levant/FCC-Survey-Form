@@ -1,0 +1,59 @@
+  :root{
+            --steel-blue: #4F7CAC;
+            --powder-blue: #C0E0DE;
+            --dark-jungle-green: #162521;
+            --charcoal: #3C474B;
+            --middle-blue-green: #9EEFE5;
+        }
+        body{
+            font-size: 1.5em;
+            color: var(--dark-jungle-green);
+            font-family: "Rubik", sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: midnightblue;
+            background-image: linear-gradient(125deg, rgba(79, 124, 172, 0.7), 
+            rgba(192, 224, 222, 0.45)),
+            url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftecake.com%2Fwp-content%2Fuploads%2F2020%2F10%2Fimages_uplayplus_hero.jpg&f=1&nofb=1);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+        }
+        .container{
+            text-align: center;
+            color:beige;
+            background-color: rgba(22, 37, 33, 0.8);
+            padding: 20px;
+            margin: 50px;
+            display: block;
+            border-radius: 15px;
+        }
+        .form-checkbox, .form-radio{
+            display:inline-block;
+            min-height: 1em;
+            min-width: 1em;
+            margin: 1.25rem;
+            margin-right: 1rem;
+        }
+        .form-content{
+            resize: vertical;
+            min-height: 1.9rem;
+            padding: 0.5em;
+            margin: 0.25rem;
+            width: 90%;
+        }
+        h1{
+            font-size: 2em;
+        }
+        #description{
+            font-style: italic;
+            font-size: 0.8em;
+        }
+        #submit{
+            display: block;
+            padding: 0.5rem;
+            margin: 1.35rem 2rem;
+            width: 90%;
+            cursor: pointer;
+        }
